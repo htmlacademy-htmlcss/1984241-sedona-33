@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Arsen Omarov](https://up.htmlacademy.ru/htmlcss/33/user/1984241).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Кривонос](https://htmlacademy.ru/profile/id1311037).
 
 ---
 
