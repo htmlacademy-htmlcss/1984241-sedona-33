@@ -192,6 +192,10 @@ body {
   margin-bottom: 0;
 }
 
+/* .advantages-list li:nth-child(2) {
+
+} */
+
 .advantages-list li:nth-child(7) {
   color: #FFFFFF;
   background-color: #83B3D3;
@@ -469,7 +473,7 @@ body {
   color: #FFFFFF;
   padding-top: 35px;
   width: 528px;
-  margin: 0 601px 5px 71px;
+  margin: 0 601px -5px 71px;
 }
 
 .hotels-on-page-text {
@@ -482,17 +486,26 @@ body {
 
 .catalog-filter {
   display: flex;
+  width: 1058px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 fieldset {
   border: none;
 }
 
-.price-filter-group {
-  width: 500px;
-}
+/* .price-filter-group {
+  width: 287px;
+} */
 
 .infrastructure-filter-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.housing-filter-list {
+  padding: 0;
   list-style-type: none;
 }
 
@@ -502,10 +515,8 @@ fieldset {
 }
 
 .control {
-}
-
-.housing-filter-list {
-  list-style-type: none;
+  color: #FFFFFF;
+  margin-bottom: 16px;
 }
 
 .infrastructure-filter-title, .housing-filter-title, .price-filter-title {
@@ -518,38 +529,46 @@ fieldset {
   margin: 0;
 }
 
-.infrastructure-filter-title {
-  margin-left: 71px;
-}
 
-.infrastructure-filter-group .housing-filter-group {
-  display: block;
+.infrastructure-filter-group, .housing-filter-group, .price-filter-group {
   margin: 0;
   padding: 0;
   min-width: 150px;
 }
 
 .housing-filter-group {
-  padding: 0;
-  margin: 0;
+  padding-left: 67px;
+}
+
+.price-filter-group {
+  padding-left: 167px;
+  width: 289px;
 }
 
 .filter-apply {
   padding: 0;
   margin: 0;
   width: 160px;
-
+  padding-left: 75px;
 }
 
-.price-forma {
+/* .price-forma {
   padding: 0;
-  width: 193px;
+  width: 143px;
+} */
+.price-forma-input {
+  padding: 0;
+  margin: 0;
+  width: 138px;
+  height: 44px;
+  margin-top: 34px;
 }
 
 .price-target {
   padding: 0;
   margin: 0;
   width: 287px;
+  margin-top: 20px;
 }
 
 .control-input {
@@ -558,6 +577,7 @@ fieldset {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+
 }
 
 .hotels-page {
@@ -568,6 +588,7 @@ fieldset {
   margin: 0;
   margin-left: 111px;
   margin-bottom: 45px;
+  color: #FFFFFF;
 }
 
 .button-filter {
@@ -578,6 +599,11 @@ fieldset {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #83B3D3;
+  padding: 0;
+  width: 160px;
+  height: 48px;
+  border-radius: 4px;
+  margin-top: 60px;
 }
 
 .button-reset {
@@ -586,7 +612,9 @@ fieldset {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
-  background-color: #83B3D3;
+  width: 160px;
+  height: 23px;
+  margin-top: 20px;
 }
 
 .setting {
@@ -606,6 +634,11 @@ fieldset {
   min-width: 337px;
   height: 39px;
   margin: 50px 192px 56px 71px;
+}
+.button-card, .button-slide, .button-list {
+  width: 48px;
+  height: 48px;
+  margin-top: 44px;
 }
 
 .select-control {
@@ -689,16 +722,19 @@ fieldset {
 }
 
 .hotel-card-button {
+  display: flex;
   font-family: "PT sans";
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
-  width: 137px;
+  width: 133px;
   height: 37px;
   color: #FFFFFF;
   background-color: #756257;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
 }
 
 .button-favorit {
