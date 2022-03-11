@@ -18,8 +18,19 @@ html {
   height: 100%;
 }
 
+.page {
+  background-color: #E5E5E5;
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   margin: 0;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -75,7 +86,7 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 16px 7px 15px 7px;
+  padding: 16px 7px 17px 7px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -93,7 +104,18 @@ body {
 }
 
 .navig-button:active {
-  text-decoration: underline;
+  border-bottom: 2px solid #756257;
+}
+
+.navig-button:active {
+}
+
+.navig-button::before {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 
 .navigation-link-in {
@@ -147,20 +169,23 @@ body {
 .button12 {
   display: flex;
   padding-bottom: 20px;
-  margin-top: 3px;
+  margin-top: 7px;
+}
+
+.button12:active {
+  opacity: 30%;
 }
 
 .ellipse {
-  margin-top: -6px;
+  width: 20px;
+  height: 20px;
+  margin-top: -9px;
   margin-left: -7px;
 }
 
 .ellipse12 {
   margin-left: -15px;
-}
-
-.button12:focus {
-  opacity: 30%;
+  margin-top: -4px;
 }
 
 .main-container {
@@ -280,14 +305,17 @@ body {
 
 .advantages-list li:nth-child(8) {
   background-color: rgba(131, 179, 211, 0.12);
+  margin-top: -1px;
 }
 
 .advantages-list li:nth-child(9) {
   background-color: rgba(131, 179, 211, 0.2);
+  margin-top: -1px;
 }
 
 .advantages-list li:nth-child(10) {
   background-color: rgba(131, 179, 211, 0.12);
+  margin-top: -1px;
 }
 
 .advantages-blue {
@@ -364,7 +392,7 @@ body {
 .advantages-title-bottom {
   width: 400px;
   height: 56px;
-  margin: 98px 0 29px;
+  margin: 99px 0 28px;
 }
 
 .advantages-description-bottom {
@@ -394,8 +422,15 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-transform: none;
-  margin-top: 0;
-  margin-bottom: 56px;
+  text-align: center;
+  width: 720px;
+  margin: 0 auto 56px auto;
+  /* margin-top: 0;
+  margin-bottom: 56px; */
+}
+
+.section-buttoms-text--span {
+  margin-right: 10px;
 }
 
 .search-hotels {
@@ -410,15 +445,24 @@ body {
   width: 575px;
   height: 60px;
   border-radius: 10px;
-  padding: 0;
-  margin: 0 313px 93px 312px;
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
+  /* margin: 0 313px 93px 312px; */
+  margin-bottom: 93px;
 }
 
 .search-hotels:hover {
   background-color: #615048;
 }
+
 .search-hotels:focus {
+  outline-color: #83B3D3;
+}
+
+
+.search-hotels:active {
   color: rgba(255, 255, 255, 0.3);
+  outline: 0;
 }
 
 .newsletter {
@@ -441,7 +485,7 @@ body {
   text-align: center;
   width: 720px;
   height: 36px;
-  padding-top: 94px;
+  padding-top: 92px;
   margin: 0 auto 29px auto;
 }
 
@@ -454,46 +498,65 @@ body {
   text-align: center;
   width: 720px;
   height: 52px;
-  margin: 0 auto 46px auto;
+  margin: 24px auto 46px auto;
 }
 
 .newsletter-form {
-  display: flex;
-  width: 800px;
+  width: 1200px;
   height: 60px;
   margin-left: auto;
   margin-right: auto;
-  border-top-right-radius: 10px;
 }
 
 .newsletter-email {
   padding: 0;
-  margin: 0;
   border-style: none;
   font-family: "PT sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
   padding-left: 22px;
-  width: 600px;
-  height: 60px;
+  width: 578px;
+  height: 59px;
+  padding-top: 1px;
   background-color: #F2F2F2;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  outline: 0;
+  border: 0;
 }
 
-.newsletter-email:hover {
+input[type="email"].newsletter-email:hover {
   background-color: #E6E6E6;
 }
 
+input[type="email"].newsletter-email:focus {
+  outline: 3px solid #83B3D3;
+}
+
+/* input[type="email"].newsletter-email:required {
+  outline: 3px solid #ff0000;
+} */
+
+/* input[type="email"].newsletter-email:required:valid {
+  outline: 3px solid transparent;
+} */
+
+/* .newsletter-email:hover {
+  border-width: 2px;
+  border-color: #83B3D3;
+} */
+
 .newsletter-email:focus {
-  outline-color: #83B3D3;
+  /* outline: none;
+  outline-color: #756257;
+  outline-width: 3px; */
 }
 
 .newsletter-button {
-  margin: -25px;
-  width: 200px;
-  height: 60px;
+  padding: 5px;
+  min-width: 200px;
+  min-height: 60px;
   font-family: "PT sans";
   font-weight: 700;
   font-size: 20px;
@@ -503,16 +566,26 @@ body {
   text-transform: uppercase;
   text-align: center;
   border: none;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 0 10px 10px 0;
+  margin-left: -5px;
+}
+
+.newsletter-button--catalog {
+  margin-left: -8px;
 }
 
 .newsletter-button:hover {
   background-color: #68A2CA;
+  cursor: pointer;
 }
 
 .newsletter-button:focus {
-  outline-color: #756257;
+  outline: #756257 solid 3px;
+}
+
+.newsletter-button:active {
+  outline: none;
+  opacity: 0.7;
 }
 
 .page-footer {
@@ -603,7 +676,7 @@ body {
 }
 
 .footer-contacts-address-phone:focus {
-  outline-color: #83B3D3;
+  /* outline-color: #83B3D3;/ */
 }
 
 .footer-contacts-address-phone:active {
@@ -878,6 +951,7 @@ fieldset {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-wrap: wrap;
   width: 1057px;
   min-height: 48px;
 }
@@ -974,16 +1048,38 @@ fieldset {
   margin: 0 18px 10px 0x;
 }
 
+
+
 .catalog-card-link {
   padding: 0;
   margin: 0;
-  height: 226px;
-}
-
-.hotel-card-image {
   width: 300px;
   height: 206px;
   margin: 20px 20px 0;
+}
+
+.catalog-card-link:focus {
+  outline: 3px solid #83B3D3;
+  outline-offset: -2px;
+}
+
+.hotel-card-image {
+  /* width: 300px;
+  height: 206px; */
+  /* margin: 20px 20px 0; */
+}
+
+.hotel-card-image:hover {
+  opacity: 0.6;
+}
+
+.hotel-card-image:active {
+  opacity: 0.3;
+}
+
+.hotel-card-link:focus {
+  /* outline: 3px solid #83B3D3; */
+  /* outline-color: none; */
 }
 
 .hotel-card-title {
@@ -1103,6 +1199,7 @@ fieldset {
   border-radius: 4px;
   padding: 0;
   margin: 0 290.17px 60px 290px;
+  cursor: pointer;
 }
 
 .button-show-more:hover {
@@ -1190,7 +1287,7 @@ fieldset {
   border-color: #E6E6E6;
   width: 160px;
   height: 48px;
-  padding-left: 15px;
+  padding-left: 13px;
   margin: 3px 0 4px;
 }
 
@@ -1207,6 +1304,7 @@ fieldset {
 }
 
 .newsletter-catalog {
+  width: 1200px;
   text-align: center;
   font-family: "PT sans";
   font-weight: 700;
@@ -1215,16 +1313,15 @@ fieldset {
   color: #000000;
   background-color: #FFFFFF;
   margin-bottom: 141px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .newsletter-email {
   background-color: #F2F2F2;
 }
 
-.newsletter-button {
-  width: 200px;
-  height: 60px;
-}
+
 
 
 
