@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div class="body-catalog-cont">
+    <div class="page">
     <header class="page-header">
       <nav class="navigation">
         <img class="nav-logo" src="images/logo.svg" width="139" height="70" alt="Логотип города Седона">
@@ -18,7 +18,7 @@
             <a class="navigation-link button navig-button" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button navig-button" href="../catalog.html">Гостиницы</a>
+            <a class="navigation-link button navig-button navig-button-current" href="../catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
@@ -55,9 +55,11 @@
       <section class="hotels-forma hotels-forma-img-background">
         <h1 class="hotels">Гостиницы Седоны</h1>
         <div class="hotels-par-catalog">
-          <svg class="home-catalog" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" fill="#fff"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill="#fff"/></svg>
+          <a class="home-href" href="../index.html">
+          <svg class="home-catalog" width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z"/></svg>
+          </a>
           <img class="image-link-catal" src="../images/nav-link-catalog.svg" width="5" height="8" alt="стрелка">
-          <p class="hotels-page">Гостиницы</p>
+           <a href="#" class="hotels-page">Гостиницы</a>
         </div>
           <form class="catalog-filter" method="get">
           <fieldset class="infrastructure-filter-group">
@@ -65,17 +67,17 @@
             <ul class="infrastructure-filter-list">
               <li class="infrastructure-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimming_pool" checked>Бассейн
+                  <input class="control-input checkbox1" type="checkbox" id="checkbox1" name="swimming_pool" checked>Бассейн
                 </label>
               </li>
               <li class="infrastructure-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                  <input class="control-input" type="checkbox" id="checkbox2" name="parking" checked>Парковка
                 </label>
               </li>
               <li class="infrastructure-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+                  <input class="control-input" type="checkbox" id="checkbox3" name="Wi-Fi">Wi-Fi
                 </label>
               </li>
             </ul>
@@ -104,7 +106,17 @@
                 <legend class="price-filter-title">Стоимость, ₽:</legend>
                 <input class="price-input price-forma-input" type="text" value="0">
                 <input class="price-input price-forma-input-right" type="text" value="9000">
-                <input class="price-target" type="range" min="1000" max="10000">
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
               </fieldset>
               <fieldset class="filter-apply">
               <button class="button-filter" type="submit">Применить</button>
@@ -119,6 +131,7 @@
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
+        <div class="toggle">
         <a href="#" class="card-grid-toggle card-grid-toggle-current">
           <span class="visually-hidden">Показать карточки</span>
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -134,6 +147,7 @@
             <path d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z" fill="#000"/></svg>
           <span class="visually-hidden">Показать список</span>
         </a>
+      </div>
       </div>
         <div class="catalog">
         <ul class="catalog-list">
@@ -204,7 +218,9 @@
           </li>
         </ul>
       </div>
+      <div class="button-show-more-box">
         <input type="button" class="button-show-more" value="Загрузить ещё">
+      </div>
       </div>
       <div class="pagination-block">
       <ul class="pagination">
@@ -287,6 +303,6 @@
         </a>
       </div>
     </footer>
-  </div>
+</div>
   </body>
   </html>
