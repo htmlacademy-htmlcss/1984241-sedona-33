@@ -23,6 +23,7 @@ html {
 
 body {
   margin: 0 auto;
+  /* font-family: "PT Sans", "Arial", sans-serif; */
 }
 
 .page {
@@ -34,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT sans", sans-serif;
+  font-family: "PT sans";
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -914,7 +915,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   border: none;
   width: 144px;
   height: 48px;
@@ -961,16 +962,6 @@ body {
   background-color: #756257;
   outline: none;
   box-shadow: none;
-}
-
-.range-text {
-  position: absolute;
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 400;
-  left: 112px;
-  top: 12px;
 }
 
 .range-scale {
@@ -1192,8 +1183,8 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 10px 18px;
-  margin-bottom: 34px;
+  gap: 0 18px;
+  margin-bottom: 24px;
 }
 
 .catalog-card {
