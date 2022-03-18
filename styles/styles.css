@@ -429,7 +429,7 @@ body {
 }
 
 .search-hotels {
-  font-family: "PT sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -528,7 +528,7 @@ body {
   padding: 5px;
   min-width: 200px;
   min-height: 60px;
-  font-family: "PT sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -1041,7 +1041,7 @@ body {
 }
 
 .button-reset {
-  font-family: "PT sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1090,7 +1090,7 @@ body {
 }
 
 .select-control {
-  font-family: "PT sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1234,7 +1234,7 @@ body {
 }
 
 .hotel-price {
-  font-family: "PT sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1314,7 +1314,7 @@ body {
   display: block;
   color: #FFFFFF;
   background-color: #83B3D3;
-  font-family: "PT sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -1404,7 +1404,7 @@ body {
 }
 
 .hotels-on-page {
-  font-family: "PT sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
