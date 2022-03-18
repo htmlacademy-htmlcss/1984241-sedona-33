@@ -35,7 +35,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT sans";
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -237,7 +236,6 @@ body {
   margin-left: 240px;
   width: 720px;
   height: 72px;
-  font-family: "PT sans";
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -246,7 +244,6 @@ body {
 }
 
 .tagline-five-reasons {
-  font-family: "PT sans";
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
@@ -277,7 +274,6 @@ body {
 }
 
 .advantages-title {
-  font-family: "PT sans";
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -375,7 +371,6 @@ body {
 }
 
 .number-description {
-  font-family: "PT sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -386,7 +381,6 @@ body {
 }
 
 .advantages-description {
-  font-family: "PT sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -411,7 +405,6 @@ body {
 }
 
 .section-buttoms {
-  font-family: "PT sans";
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -422,7 +415,6 @@ body {
 }
 
 .section-buttoms-text {
-  font-family: "PT sans";
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -477,7 +469,6 @@ body {
 }
 
 .ind-section-buttoms-mail {
-  font-family: "PT sans";
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -490,7 +481,6 @@ body {
 }
 
 .ind-section-buttoms-text-mail {
-  font-family: "PT sans";
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -509,7 +499,6 @@ body {
 }
 
 .newsletter-email {
-  font-family: "PT sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -640,7 +629,6 @@ body {
 
 .footer-contacts-address-phone {
   display: flex;
-  font-family: "PT sans";
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -915,7 +903,6 @@ body {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
-  font-family: "PT Sans";
   border: none;
   width: 144px;
   height: 48px;
@@ -1092,7 +1079,6 @@ body {
 }
 
 .serch-hotels {
-  font-family: "PT sans";
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
@@ -1217,7 +1203,6 @@ body {
 }
 
 .hotel-card-title {
-  font-family: "PT sans";
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
@@ -1261,7 +1246,6 @@ body {
 
 .hotel-card-button {
   display: flex;
-  font-family: "PT sans";
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -1379,7 +1363,6 @@ body {
   width: 55px;
   height: 55px;
   background-color: #83B3D3;
-  font-family: "PT sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -1461,7 +1444,6 @@ body {
 .newsletter-catalog {
   width: 1200px;
   text-align: center;
-  font-family: "PT sans";
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1473,7 +1455,6 @@ body {
 }
 
 .section-buttoms-mail {
-  font-family: "PT sans";
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1486,7 +1467,6 @@ body {
 }
 
 .section-buttoms-text-mail {
-  font-family: "PT sans";
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
