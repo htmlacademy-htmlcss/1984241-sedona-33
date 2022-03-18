@@ -70,7 +70,6 @@ body {
 }
 
 .nav-logo {
-  margin-right: 40px;
   z-index: 1;
 }
 
@@ -81,6 +80,7 @@ body {
   padding: 0;
   min-width: 363px;
   list-style-type: none;
+  margin-left: 40px;
   margin-right: 247px;
 }
 
@@ -273,6 +273,28 @@ body {
   height: 384px;
 }
 
+.advantages-item-top {
+  padding-top: 185px;
+  box-sizing: border-box;
+}
+
+.top-image-house {
+  background-image: url("../images/icon-house.svg");
+  background-repeat: no-repeat;
+  background-position: center 90px;
+}
+
+.top-image-food {
+  background-image: url("../images/icon-food.svg");
+  background-repeat: no-repeat;
+  background-position: center 90px;
+}
+
+.top-image-souvenir {
+  background-image: url("../images/icon-souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: center 90px;
+}
 .advantages-title {
   font-weight: 700;
   font-size: 24px;
@@ -329,28 +351,6 @@ body {
   width: 220px;
   height: 63px;
   margin: 0 90px 87px;
-}
-
-
-.top-image-hous {
-  background-image: url("../images/icon-house.svg");
-  width: 75px;
-  height: 72px;
-  margin: 89px 162.1px 23px 163.2px;
-}
-
-.top-image-food {
-  background-image: url("../images/icon-food.svg");
-  width: 74px;
-  height: 70px;
-  margin: 91px 163.19px 23px 163px;
-}
-
-.top-image-souvenir {
-  background-image: url("../images/icon-souvenir.svg");
-  width: 64px;
-  height: 76px;
-  margin: 85.05px 168px 23px;
 }
 
 .advantages-title-top-image {
@@ -438,7 +438,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: 575px;
-  height: 60px;
+  min-height: 60px;
   border-radius: 10px;
   margin-bottom: 93px;
 }
@@ -682,7 +682,10 @@ body {
 
 /* ----------------------------------catalog-page---------------------------------------------------------------------------------- */
 
-
+  .return {
+    z-index: 1;
+    margin-bottom: -5px;
+  }
 
  .hotels-properties {
   display: flex;
